@@ -17,7 +17,8 @@ struct ErrorView: View {
             Text("Something went wrong. Please try again.")
                 .padding(.bottom, 16)
                 .font(.subheadline)
-                .foregroundColor(Color(#colorLiteral(red: 0.5567991138, green: 0.5568398237, blue: 0.5783395171, alpha: 1)))
+                .foregroundColor(Color.gray)
+            ButtonRetry()
         }
     }
 }

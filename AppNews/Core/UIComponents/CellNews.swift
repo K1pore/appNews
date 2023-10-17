@@ -11,20 +11,19 @@ private let screen = UIScreen.main.bounds.width
 
 struct CellNews: View {
     var body: some View {
-        
-    ZStack(alignment: .center) {
+    
+        ZStack(alignment: .top) {
+        Rectangle()
+                .fill(Color(.colorGrayBack))
+        .frame(width: screen, height: screen / 1.33)
+            
         Image("imageCell")
         .resizable()
         .aspectRatio(contentMode: .fit)
-        .cornerRadius(15)
-        Rectangle()
-            .fill(Color(#colorLiteral(red: 0.8980392814, green: 0.8980391622, blue: 0.8980391622, alpha: 1)))
-            .frame(width: screen, height: screen / 4)
-            .position(x: 197, y: 510)
-            .cornerRadius(15)
-
-        
-        }
+      
+            
+    }
+    .cornerRadius(15)
     }
 }
 

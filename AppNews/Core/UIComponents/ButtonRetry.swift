@@ -14,7 +14,7 @@ struct ButtonRetry: View {
             .foregroundColor(.black)
             .padding(.horizontal, 60)
             .padding(.vertical, 12)
-            .background(Color(#colorLiteral(red: 0.8980392814, green: 0.8980391622, blue: 0.8980391622, alpha: 1)))
+            .background(Color.colorGrayBack)
             .cornerRadius(10)
             }
     }
