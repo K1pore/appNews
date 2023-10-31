@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C55FCAD2ADC1F7600EC7D0B /* ButtonLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55FCAC2ADC1F7600EC7D0B /* ButtonLink.swift */; };
+		7C55FCAF2ADC214600EC7D0B /* CellNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55FCAE2ADC214600EC7D0B /* CellNews.swift */; };
+		7C55FCB12ADDA17100EC7D0B /* ButtonRetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55FCB02ADDA17100EC7D0B /* ButtonRetry.swift */; };
+		7C55FCB32ADDA3E000EC7D0B /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55FCB22ADDA3E000EC7D0B /* ErrorView.swift */; };
+		7C55FCB52ADED8DA00EC7D0B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55FCB42ADED8DA00EC7D0B /* LoadingView.swift */; };
 		7CA90B002AD680E200481DBC /* AppNewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA90AFF2AD680E200481DBC /* AppNewsApp.swift */; };
 		7CA90B022AD680E200481DBC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA90B012AD680E200481DBC /* ContentView.swift */; };
 		7CA90B042AD680E400481DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA90B032AD680E400481DBC /* Assets.xcassets */; };
 		7CA90B072AD680E400481DBC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CA90B062AD680E400481DBC /* Preview Assets.xcassets */; };
+		7CA90B122AD7DB4400481DBC /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 7CA90B112AD7DB4400481DBC /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C55FCAC2ADC1F7600EC7D0B /* ButtonLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLink.swift; sourceTree = "<group>"; };
+		7C55FCAE2ADC214600EC7D0B /* CellNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellNews.swift; sourceTree = "<group>"; };
+		7C55FCB02ADDA17100EC7D0B /* ButtonRetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonRetry.swift; sourceTree = "<group>"; };
+		7C55FCB22ADDA3E000EC7D0B /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		7C55FCB42ADED8DA00EC7D0B /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7CA90AFC2AD680E200481DBC /* AppNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CA90AFF2AD680E200481DBC /* AppNewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNewsApp.swift; sourceTree = "<group>"; };
 		7CA90B012AD680E200481DBC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7CA90B032AD680E400481DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CA90B062AD680E400481DBC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7CA90B112AD7DB4400481DBC /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +47,7 @@
 		7CA90AF32AD680E200481DBC = {
 			isa = PBXGroup;
 			children = (
+				7CA90B112AD7DB4400481DBC /* .gitignore */,
 				7CA90AFE2AD680E200481DBC /* AppNews */,
 				7CA90AFD2AD680E200481DBC /* Products */,
 			);
@@ -51,10 +64,8 @@
 		7CA90AFE2AD680E200481DBC /* AppNews */ = {
 			isa = PBXGroup;
 			children = (
-				7CA90AFF2AD680E200481DBC /* AppNewsApp.swift */,
-				7CA90B012AD680E200481DBC /* ContentView.swift */,
 				7CA90B0D2AD7D9DC00481DBC /* PresentationLayer */,
-				7CA90B032AD680E400481DBC /* Assets.xcassets */,
+				7CA90B0E2AD7DADE00481DBC /* Core */,
 				7CA90B052AD680E400481DBC /* Preview Content */,
 			);
 			path = AppNews;
@@ -63,6 +74,7 @@
 		7CA90B052AD680E400481DBC /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				7CA90B032AD680E400481DBC /* Assets.xcassets */,
 				7CA90B062AD680E400481DBC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -71,8 +83,38 @@
 		7CA90B0D2AD7D9DC00481DBC /* PresentationLayer */ = {
 			isa = PBXGroup;
 			children = (
+				7CA90AFF2AD680E200481DBC /* AppNewsApp.swift */,
+				7CA90B012AD680E200481DBC /* ContentView.swift */,
+				7C55FCB22ADDA3E000EC7D0B /* ErrorView.swift */,
+				7C55FCB42ADED8DA00EC7D0B /* LoadingView.swift */,
 			);
 			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		7CA90B0E2AD7DADE00481DBC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				7CA90B102AD7DB1300481DBC /* UIComponents */,
+				7CA90B0F2AD7DB0600481DBC /* Networking */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		7CA90B0F2AD7DB0600481DBC /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		7CA90B102AD7DB1300481DBC /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				7C55FCAC2ADC1F7600EC7D0B /* ButtonLink.swift */,
+				7C55FCB02ADDA17100EC7D0B /* ButtonRetry.swift */,
+				7C55FCAE2ADC214600EC7D0B /* CellNews.swift */,
+			);
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,6 +176,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CA90B072AD680E400481DBC /* Preview Assets.xcassets in Resources */,
+				7CA90B122AD7DB4400481DBC /* .gitignore in Resources */,
 				7CA90B042AD680E400481DBC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C55FCAD2ADC1F7600EC7D0B /* ButtonLink.swift in Sources */,
+				7C55FCB32ADDA3E000EC7D0B /* ErrorView.swift in Sources */,
+				7C55FCB12ADDA17100EC7D0B /* ButtonRetry.swift in Sources */,
 				7CA90B022AD680E200481DBC /* ContentView.swift in Sources */,
+				7C55FCAF2ADC214600EC7D0B /* CellNews.swift in Sources */,
+				7C55FCB52ADED8DA00EC7D0B /* LoadingView.swift in Sources */,
 				7CA90B002AD680E200481DBC /* AppNewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
